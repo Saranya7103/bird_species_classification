@@ -10,7 +10,7 @@ class Predict {
     var length = await imageFile.length();
     print(length);
     var uri = Uri.parse(
-        'http://192.168.203.28:5000/home/image');
+        'YOUR API END POINT HERE');
     var request = http.MultipartRequest("POST", uri);
     var multipartFile = http.MultipartFile('file', stream, length,
         filename:
